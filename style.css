@@ -1,78 +1,93 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    min-height: 50rem;
+    background-color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f0f0f;
-}
-img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
+    height: 100vh;
+    color: #ffffff;
 }
 .container{
-    width: 14%;
-    padding: 1.6rem;
-    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1f1f1f;
-    color: #fff;
+    border-radius: 10px;
+    /* padding: 1rem; */
+    
     text-align: center;
 }
-.container h2{
-    font-size: 1.4rem;
-    margin-bottom: .8rem;
+h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
 }
 .location{
-    color: #a6ff00;
-    font-size:.8rem;
-    margin-bottom: 1.8rem;
     font-weight: bold;
+    font-size: small;
+    color: #c5f72b;
+    margin-bottom: 1.5rem;
 }
 .bio{
-    font-size: .8rem;
-    color: #ccc;
-    margin-bottom: .8rem;
+    font-size: small;
+    margin-bottom: 1rem;
 }
-.buttons button {
-    width: 100%;
-    padding: .8rem;
-    margin-bottom: 10px;
-    background: #333;
-    border: none;
-    outline: none;
+img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid non;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 80%;
+}
+.buttons a:hover{
+    transition: background-color .3s ease-in-out;
+    background-color: #c5f72b;
+    color: #141414;
+}
+.buttons a{
+    text-decoration: none;
     font-weight: bold;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background 0.3s;
+    margin-bottom: .5rem;
+    color: #ffffff;
+    background-color: #333333;
+    width: 100%;
+    padding: .7rem;
+    border-radius: 5px;
+    display: block;
 }
-.attribution {
+
+.attribution{
+    visibility: hidden;
+    margin-top: 1rem;
     font-size: 11px;
     text-align: center;
-    visibility: hidden;
 }
-.buttons button:hover {
-    background-color:#a6ff00 ;
-    transition: background 1s;
-    cursor: pointer;
-    color: #1f1f1f;
+.attribution a{
+    text-decoration: none;
+    color: #c5f72b;
 }
+
 @media (min-width: 0px) {
     .container{
-        width: 18rem;
+        width: 21rem;
     
     }
     }
 @media  (min-width: 769px) {
     .container{
-        width: 20rem;
+        width: 21rem;
     }
 }
 @media (min-width: 1200px) {
