@@ -81,8 +81,8 @@ img{
 
 @media (min-width: 0px) {
     .container{
-        width: 21rem;
-    
+        width: 80%;
+        height: 70%
     }
     }
 @media  (min-width: 769px) {
@@ -95,3 +95,4 @@ img{
         width: 22rem;
     }
 }
+
